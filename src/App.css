@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+body{
+  overflow-x:hidden;
+
+}
 
 .App-logo {
   height: 40vmin;
@@ -13,6 +17,14 @@
   }
 }
 
+@media (min-width: 600px) {
+  #myInput {
+    width: 50%;
+  } 
+  #check {
+    border-right: 0px white;
+}
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +47,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+/*NavBar*/ 
+#nb1{
+  height: 40px;
+  width: 100%;
+}
+#nb2 {
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-size: 18px;
+}
+#nb3{
+  padding-bottom: 50px;
+}
+
+/*Footer*/ 
+footer{
+  bottom:0;
+  position: absolute;
+  width:100%;
+  background-color: black;
+}
+#f1, #f2 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+/* Search Bar */
+#myInput {
+  /* background-image: url('/descarga.png');  */
+  background-position: 10px 12px; /* */
+  background-repeat: no-repeat; /*  */
+ /* width: 100%; /* Full-width */
+  height:12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-right: 16px;
+  margin-top: 18px;
+  margin-bottom: 12px; /* Add some space below the input */
+  box-shadow: 0 1px 1px rgba(131, 129, 128, 0.075)inset, 0 0 8px rgba(4, 4, 5, 0.6);
+  outline: 0 none;
+}
+
+/* Check Box */
+#check {
+margin-left:6px;
+border-right: 2px solid grey;
+height: 70%;
+position: absolute;
+}
+#filter{
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 8px;
+}
+#ch1, #ch2, #ch3 {
+  border:2px solid black;
+    background-color:black;
+}
+span {
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
