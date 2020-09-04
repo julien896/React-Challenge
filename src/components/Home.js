@@ -1,22 +1,28 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'materialize-css';
 import Filter from './Filter';
+import Footer from './Footer';
+import SearchBar from './SearchBar';
+import Card from './Card';
+import Pagination from './Pagination';
 
 
 const Home = () => {
+
+    
     return ( 
     <>
-        <div className="row justify-content-end">   
-            <input
-                className="col-md-8 offset-md-4" 
-                type="text" 
-                id="myInput" 
-                placeholder="Buscar.."
-            />
-        </div>
+        
+            <SearchBar/>
 
             <Filter/>
+            <Card/>  
+            <Footer/>  
+            <Pagination/>
+     
+     
+
 
     </>
      );

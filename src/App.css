@@ -65,7 +65,7 @@ body{
 /*Footer*/ 
 footer{
   bottom:0;
-  position: absolute;
+  position: fixed;
   width:100%;
   background-color: black;
 }
@@ -76,9 +76,10 @@ footer{
 
 /* Search Bar */
 #myInput {
-  /* background-image: url('/descarga.png');  */
+  background-image: url('/descarga.png');  
   background-position: 10px 12px; /* */
   background-repeat: no-repeat; /*  */
+  background-size:14px 14px;
  /* width: 100%; /* Full-width */
   height:12px;
   font-family: 'Roboto', sans-serif;
@@ -87,27 +88,71 @@ footer{
   border: 1px solid #ddd; /* Add a grey border */
   margin-right: 16px;
   margin-top: 18px;
-  margin-bottom: 12px; /* Add some space below the input */
+  margin-bottom: 10px; /* Add some space below the input */
   box-shadow: 0 1px 1px rgba(131, 129, 128, 0.075)inset, 0 0 8px rgba(4, 4, 5, 0.6);
   outline: 0 none;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+  color:grey;
 }
 
 /* Check Box */
 #check {
 margin-left:6px;
 border-right: 2px solid grey;
-height: 70%;
+height: 85%;
 position: absolute;
+margin-top:34px;
 }
 #filter{
   font-family: 'Roboto', sans-serif;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 #ch1, #ch2, #ch3 {
   border:2px solid black;
     background-color:black;
 }
-span {
+label{
+  margin-top:15px;
+  margin-left: 15px;
+}
+span{
   font-family: 'Roboto', sans-serif;
   color: black;
+  font-size:15px ;
 }
+
+/* Card */
+
+/* acercar al filtro despues de los 500px*/
+
+#container{
+  margin-left:400px;
+  margin-top:20px;
+}
+#card{
+  background-color: white;
+  width:90%;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+  margin: 12px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  min-width: 150px;
+  height:250px;
+}
+.card-image{
+  width: 100%;
+}
+.card-name{
+  font-size: 20px;
+  margin: 7px 0 7px 0;
+} 

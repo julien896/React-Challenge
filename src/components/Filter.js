@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'materialize-css';
 
+
 const Filter = () => {
     return ( 
     <>
@@ -12,23 +13,24 @@ const Filter = () => {
             <p>
             <label>
               <input id="ch1" type="checkbox" />
-              <span>Characters</span>
+              <span >Characters</span>
             </label>
             </p>
             <p>
             <label>
               <input id="ch2" type="checkbox"/>
-              <span>Locations</span>
+              <span >Locations</span>
             </label>
             </p>
             <p>
             <label>
               <input id="ch3" type="checkbox"/>
-              <span>Episodes</span>
+              <span >Episodes</span>
             </label>
             </p>
           </form>
-        </div>
+        </div>  
+
       </div>   
     </>
 
