@@ -89,7 +89,7 @@ footer{
   margin-right: 16px;
   margin-top: 18px;
   margin-bottom: 10px; /* Add some space below the input */
-  box-shadow: 0 1px 1px rgba(131, 129, 128, 0.075)inset, 0 0 8px rgba(4, 4, 5, 0.6);
+  box-shadow: 0 1px 1px rgba(223, 184, 165, 0.075)inset, 0 0 8px rgba(4, 4, 5, 0.6);
   outline: 0 none;
 }
 input[type=search]::-webkit-search-cancel-button {
@@ -156,3 +156,20 @@ span{
   font-size: 20px;
   margin: 7px 0 7px 0;
 } 
+
+/*Details*/
+#loading {
+  font-family:'Roboto', sans-serif;
+  size:100px;
+}
+/*Select*/
+#select {
+  margin-top:300px;
+}
+#sel {
+  box-shadow: 0 1px 1px rgba(223, 184, 165, 0.075)inset, 0 0 8px rgba(4, 4, 5, 0.6);
+}
+.s,.l {
+font-family: 'Roboto', sans-serif;
+}
+

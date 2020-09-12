@@ -1,5 +1,4 @@
-import React from 'react';
-import { gql } from 'apollo-boost';
+import gql  from 'graphql-tag';
 
    export let queryChar = gql`
     {
